@@ -1,1 +1,1 @@
-Ant Rent redux version
+WireRent redux version
