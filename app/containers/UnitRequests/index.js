@@ -11,7 +11,7 @@ import { Helmet } from 'react-helmet';
 import { FormattedMessage } from 'react-intl';
 import { createStructuredSelector } from 'reselect';
 import { compose } from 'redux';
-import moment from 'moment'
+// import moment from 'moment'
 import * as Yup from 'yup';
 import { useParams, useHistory } from 'react-router-dom';
 import {

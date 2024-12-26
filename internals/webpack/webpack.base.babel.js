@@ -29,15 +29,15 @@ module.exports = options => ({
           loader: 'babel-loader',
           query: {
             plugins: [
-              [
-                'import',
-                {
-                  libraryName: 'antd',
-                  libraryDirectory: 'es',
-                  style: true,
-                },
-                'antd',
-              ],
+              // [
+              //   'import',
+              //   {
+              //     libraryName: 'antd',
+              //     // libraryDirectory: 'es',
+              //     style: true,
+              //   },
+              //   'antd',
+              // ],
               [
                 'import',
                 {
@@ -47,16 +47,16 @@ module.exports = options => ({
                 },
                 'antdesignicons',
               ],
-              [
-                'import',
-                {
-                  libraryName: 'formik-antd',
-                  libraryDirectory: 'es', // defaults to 'lib'
-                  // camel2DashComponentName: false, // defaults to true
-                  style: true,
-                },
-                'formikantd',
-              ],
+              // [
+              //   'import',
+              //   {
+              //     libraryName: 'formik-antd',
+              //     libraryDirectory: 'es', // defaults to 'lib'
+              //     // camel2DashComponentName: false, // defaults to true
+              //     style: true,
+              //   },
+              //   'formikantd',
+              // ],
               [
                 'babel-plugin-import',
                 {

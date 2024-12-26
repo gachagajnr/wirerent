@@ -7,6 +7,7 @@
 
 // Needed for redux-saga es6 generator support
 import React from 'react';
+import 'antd/dist/antd.css';
 
 import '@babel/polyfill';
 // import 'antd/dist/antd.less';

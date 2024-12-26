@@ -66,14 +66,17 @@ export function LoginPage() {
       <Grid
         container
         spacing={0}
+        justifyItems="center" 
+        alignItems='center'
         direction="row-reverse"
-        justify="space-evenly"
-        alignItems="center"
-      >
+       >
         <Grid item xs={12} sm={6}>
-          <Paper className={classes.paper} elevation={2}>
-            <Title level={1} style={{ margin: 20, padding: 10 }}>
-              Hello WireRent;
+          <img src={LoginSvg} alt="Login" />
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <Paper className={classes.paper} elevation={0}>
+            <Title level={4} style={{ margin: 20, padding: 10 }}>
+              Wirerent Your Renting & Property Partner;
             </Title>
             <Formik
               initialValues={{
@@ -87,14 +90,14 @@ export function LoginPage() {
               }}
             >
               {({ isSubmitting,  touched }) => (
-                <Form layout="horizontal">
+                <Form layout="vertical">
                   <Grid
                     container
                     direction="column"
-                    justify="center"
+                    justifyItems="center"
                     alignItems="center"
                   >
-                    <Grid item xs={12} sm={6}>
+                    <Grid item xs={12} sm={12}>
                       <Form.Item
                         label="Email Address"
                         name="email"
@@ -109,7 +112,7 @@ export function LoginPage() {
                       </Form.Item>
                     </Grid>
 
-                    <Grid item xs={12} sm={6}>
+                    <Grid item xs={12} sm={12}>
                       <Form.Item
                         label="Password"
                         name="password"
@@ -130,7 +133,7 @@ export function LoginPage() {
               )}
             </Formik>
             <div style={{ marginTop: 30 }}>
-              {'Cant Login? Sign Up For An Account '}
+              {'Sign Up For An Account '}
               <Link to="/register" style={{ margin: 10 }}>
                 Sign Up
               </Link>
